@@ -1,0 +1,58 @@
+body {
+    background: whitesmoke;
+}
+body, html {
+    height: 100%;
+}
+
+  .parallax,
+  .bg-img-1,
+  .bg-img-2 { 
+    /* The image used */
+    /* background: url("../images/business-code-code.jpg"); */
+
+    /* Set a specific height */
+    min-height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-img-1 {
+    background: url("../images/business-code-code.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-img-2 {
+    background: url("../images/black-and-white-clouds-cold-1292677.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.caption {
+    position: absolute;
+    top: 30%;
+    background-color: #111;
+    color: #fff;
+    padding: 25px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    font-size: 50px;
+}
+.my-name {
+    font-family: 'Hanalei Fill', cursive;
+    /* background-color: #111; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-me {
+    min-height: 200px;
+    margin: 10px 0 10px 0;
+    
+    
+}
