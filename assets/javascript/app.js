@@ -1,10 +1,18 @@
 $(document).ready(function () {
-
+    
     var hoverFace = $(".my-name");
-    $(".my-name").css("background-image","url(\"assets/images/HenryProf.jpg\")");
+    
+    hoverFace.slideDown(3000);
+    
     function removeFace() {
-        hoverFace.css("background-image", "");
+       hoverFace.slideUp(3000);
+       $(".my-name-2").slideDown(3000);
     }
     // hoverFace.attr("background-color", "#111");
-    window.setTimeout(removeFace, 2000);
+    window.setTimeout(removeFace, 4000);
 });
+
+
+// hoverFace.css("background-image", "");
+// $(".my-name").html("Henry M¢Intyre");
+// $(".my-name").css("color", "whitesmoke")
