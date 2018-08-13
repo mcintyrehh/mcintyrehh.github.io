@@ -1,16 +1,21 @@
 $(document).ready(function () {
-    
-    var hoverFace = $(".my-name");
-    
+    var hoverFace = $(".my-name-2");
     hoverFace.slideDown(3000);
     
-    function removeFace() {
-       hoverFace.slideUp(3000);
-       $(".my-name-2").slideDown(3000);
-    }
-    // hoverFace.attr("background-color", "#111");
-    window.setTimeout(removeFace, 4000);
+    $(".hide").hide();
+    $(".card").hover(
+        function () {
+            $(this).find(".card-img").css("opacity", "0.2");
+            $(this).find(".hide").show();
+        }, function () {
+            $(this).find(".card-img").css("opacity", "1");
+            $(this).find(".hide").hide();
+            //   $(this).find(".movie-year").hide();
+        }
+    );
 });
+
+
 
 
 // hoverFace.css("background-image", "");
