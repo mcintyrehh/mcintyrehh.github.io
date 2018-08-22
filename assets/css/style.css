@@ -18,6 +18,7 @@ body, html {
 }
 .bg-img-2 {
     min-height: 100%;
+    width: 100%;
     background: url("../images/black-and-white-clouds-cold-1292677.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -26,6 +27,7 @@ body, html {
 }
 .bg-img-3 {
     height: 100%;
+    width: 100%;
     background: url("../images/abandoned-art-building-162379.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -59,13 +61,23 @@ body, html {
 }
 .contact-me {
     background-color: black;
-    
-    color: whitesmoke;
+    color: lime;
+    margin: 0;
 }
+
 .contact-me-text {
     margin: 15px 0 10px 0;
 }
+#cursor {
+    animation-name: blink;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+}
+@keyframes blink {
+    from {opacity: 1;}
+    to {opacity: 0;}
 
+}
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
