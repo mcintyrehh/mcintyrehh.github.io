@@ -30,7 +30,7 @@
         </div>
     </div>
     <div class="row about-me m-0 text-center">
-        <div class="col-md-6 about-me-text my-auto mx-auto">
+        <div class="col-md-6 about-me-text mx-auto">
             I am an aspiring Full-Stack Web Developer with a passion for creative problem solving, self-motivated research, and learning
             cutting edge frameworks/libraries.
             <br>
@@ -123,13 +123,29 @@
         </div>
     </div>
     <div class="row contact-me ">
-        <div class="contact-me-text mx-auto" id="caption">
-                      
+        <div class="contact-animation mx-auto">
+            <div class="contact-me-text mx-auto" id="caption">
+
+            </div>
         </div>
-        <span id="cursor">|</span>
     </div>
-    <div class="parallax bg-img-3">
-        <div class="row "> </div>
+    <div class="parallax bg-img-3 row parent">
+        <div class="col-md-8 mx-auto my-auto text-center contact-box">
+            <div class="row">
+                <h1 class="col-md-12 contact-head mx-auto">Contact Me</h1>
+            </div>
+            <div class="row my-auto">
+                <div class="col-md-8 mx-auto form-group text-left inputs">
+                    <label>Name:</label>
+                    <input id="name" class="form-control" placeholder="Name">
+                    <label class="mt-2">Email Address:</label>
+                    <input id="email" type:"email" class="form-control" placeholder="email@address.com">
+                    <label class="mt-2">Example textarea</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Drop me a line!"></textarea>
+                </div>
+            </div>
+            <div class="btn btn-success mx-auto mb-4 submit">Submit</div>                
+        </div>
     </div>
     <!-- script links: jquery: popper, bootstrap, ajax, firebase, moment, local js -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>

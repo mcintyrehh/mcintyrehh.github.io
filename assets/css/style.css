@@ -57,26 +57,32 @@ body, html {
 }
 .about-me {
     min-height: 200px;
-    margin: 10px 0 10px 0;
+    margin: 20px 0 20px 0;
+}
+.about-me-text {
+    margin: 20px 0;
 }
 .contact-me {
     background-color: black;
     color: lime;
     margin: 0;
 }
+.contact-head {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 
 .contact-me-text {
     margin: 15px 0 10px 0;
 }
-#cursor {
-    animation-name: blink;
-    animation-duration: 1000ms;
-    animation-iteration-count: infinite;
+.contact-box {
+    color: white;
+    margin-bottom: 10px;
+    /* height: 70%; */
+    background-color: black;
 }
-@keyframes blink {
-    from {opacity: 1;}
-    to {opacity: 0;}
-
+.inputs {
+    margin-bottom: 25px;
 }
 
 @media only screen and (max-width: 768px) {
