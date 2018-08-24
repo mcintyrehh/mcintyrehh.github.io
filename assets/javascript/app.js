@@ -1,7 +1,4 @@
 $(document).ready(function () {
-    var hoverFace = $(".my-name-2");
-    hoverFace.slideDown(3000);
-
     $(".hide").hide();
     $(".card").hover(
         function () {
