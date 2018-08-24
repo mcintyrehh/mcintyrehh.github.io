@@ -10,6 +10,7 @@ body, html {
 
 .bg-img-1 {
     height: 100%;
+    width: 100%;
     background: url("../images/business-code-code.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -33,6 +34,7 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0;
 }
 .caption {
     position: absolute;
@@ -61,6 +63,9 @@ body, html {
 }
 .about-me-text {
     margin: 20px 0;
+}
+.liri {
+    font-size: 10pt;
 }
 .contact-me {
     background-color: black;
