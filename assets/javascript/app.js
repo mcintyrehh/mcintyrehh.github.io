@@ -141,14 +141,14 @@ var projects = [
         about: "MySQL & Inquirer based Node.js command line warehouse/inventory app",
         techUsed: "node.js, MySQL, Inquirer, easy-table, ",
         link: "https://github.com/mcintyrehh/bamazon",
-        img: "assets/images/bamazon.png"
+        img: "assets/images/bamazon.jpg"
     },
     {
         name: "Adversario",
         about: "Find your perfect Archenemy with this nemesis matching app powered by:",
         techUsed: "Express, Node.js, and Heroku",
         link: "https://calm-inlet-70591.herokuapp.com/",
-        img: "assets/images/Adversario.png"
+        img: "assets/images/Adversario.jpg"
     },
 
 ]
