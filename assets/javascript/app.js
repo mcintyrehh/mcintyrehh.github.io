@@ -150,6 +150,13 @@ var projects = [
         link: "https://calm-inlet-70591.herokuapp.com/",
         img: "assets/images/Adversario.jpg"
     },
+    {
+        name: "Hank's Burgers",
+        about: "Burger logger with a homemade ORM, following the MVC design pattern",
+        techUsed: "MySQL, Node, Express, Handlebars, Jaws DB, Heroku",
+        link: "https://calm-atoll-38312.herokuapp.com/",
+        img: "assets/images/hanksburgers.png"
+    }
 
 ]
 projects.forEach(function(element) {
