@@ -6,8 +6,6 @@ body, html {
     width: 100%;
     margin: 0;
 }
-
-
 .bg-img-1 {
     height: 100%;
     width: 100%;
@@ -54,7 +52,11 @@ body, html {
     padding: 25px;
     padding-top: 50px;
     padding-bottom: 50px;
-    font-size: 50px;
+    font-size: 120px;
+}
+.prof-pic {
+    height: 280px;
+    float: left;
 }
 .about-me {
     min-height: 200px;
@@ -62,6 +64,7 @@ body, html {
 }
 .about-me-text {
     margin: 20px 0;
+    overflow: auto;
 }
 .liri {
     font-size: 10pt;
@@ -83,7 +86,7 @@ body, html {
     color: white;
     margin-bottom: 10px;
     /* height: 70%; */
-    background-color: black;
+    background-color: rgba(0, 0, 0, .9);
 }
 .inputs {
     margin-bottom: 25px;

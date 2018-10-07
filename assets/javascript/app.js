@@ -7,19 +7,21 @@ $(document).ready(function () {
         }, function () {
             $(this).find(".card-img").css("opacity", "1");
             $(this).find(".hide").hide();
-            //   $(this).find(".movie-year").hide();
         }
     );
 
 });
+
 //array with an element for each line printd
 var contactArray = ["let contact = {", "intro: \"I\'d love to hear from you\",", "strangers: \"say hi\",", "friends: \"hurl an insult\",", "recruiters: \"send job offers!\"", "}"]
 console.log(contactArray);
 var caption = $("#caption");
-//declaring iterators for index of individual elements, and the elements themselves
+//declaring iterators for index of individual elements, and the elements themselves 
 var i = 0;
 var index = 0;
 var currentWord = contactArray[index];
+//making sure it only plays one time
+var hasPlayed = false;
 //as long as i is within the word, append the letter at this place and move to the next letter
 function typeWriter() {
     if (i < currentWord.length) {
@@ -48,9 +50,13 @@ function typeWriter() {
             stopFunction();
             return;
         }
-
     }
 }
+console.log($(".contact-animation").offset().top);
+$(window).on("scroll", function() {
+    if (!hasPlayed &&  $(".contact-animation").offset().top < 100);
+    console.log("*****NOICE*****");
+})
 //appends a letter ia typeWriter every 150ms
 var interval = setInterval(typeWriter, 150)
 //callback function to clear the interval once line is completed
@@ -78,7 +84,7 @@ $(".submit").on("click", function () {
     console.log("message: " + message);
 })
 
-
+//array of objects for easily adding new ones
 var projects = [
     {
         name: "Hangman",
@@ -159,7 +165,8 @@ var projects = [
     }
 
 ]
-projects.forEach(function(element) {
+//for each object in the array, make a card!
+projects.forEach(function (element) {
     project(element);
 })
 function project(projObj) {
