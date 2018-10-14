@@ -86,20 +86,20 @@ $(".submit").on("click", function () {
 
 //array of objects for easily adding new ones
 var projects = [
-    {
-        name: "Hangman",
-        about: "My first JavaScript project!",
-        techUsed: "JavaScript, HTML, CSS",
-        link: "https://mcintyrehh.github.io/Word-Guess-Game/",
-        img: "assets/images/hangmancrop.jpg"
-    },
-    {
-        name: "RPG Game",
-        about: "jQuery web game with dynamically updated HTML",
-        techUsed: "jQuery, Bootstrap, HTML, CSS",
-        link: "https://mcintyrehh.github.io/unit-4-game/",
-        img: "assets/images/raccoon2.jpg"
-    },
+    // {
+    //     name: "Hangman",
+    //     about: "My first JavaScript project!",
+    //     techUsed: "JavaScript, HTML, CSS",
+    //     link: "https://mcintyrehh.github.io/Word-Guess-Game/",
+    //     img: "assets/images/hangmancrop.jpg"
+    // },
+    // {
+    //     name: "RPG Game",
+    //     about: "jQuery web game with dynamically updated HTML",
+    //     techUsed: "jQuery, Bootstrap, HTML, CSS",
+    //     link: "https://mcintyrehh.github.io/unit-4-game/",
+    //     img: "assets/images/raccoon2.jpg"
+    // },
     {
         name: "Science Trivia",
         about: "JavaScript based trivia game",
@@ -121,27 +121,27 @@ var projects = [
         link: "https://mcintyrehh.github.io/RapGif/",
         img: "assets/images/tacos.gif"
     },
-    {
-        name: "Train Brain",
-        about: "FireBase Train scheduler App",
-        techUsed: "Firebase, moment.js",
-        link: "https://mcintyrehh.github.io/Brain-Train/",
-        img: "assets/images/escape-flight.png"
-    },
-    {
-        name: "Pic-Me-Up",
-        about: "Group project, in development",
-        techUsed: "(API keys have expired)",
-        link: "",
-        img: "assets/images/tempsnip.png"
-    },
-    {
-        name: "LIRI",
-        about: "Command line node.js app to display Tweets, movie, and song info",
-        techUsed: "node.js, npm, OMDb, Twitter, Spotify APIs",
-        link: "https://github.com/mcintyrehh/liri-node-app",
-        img: "assets/images/node.png"
-    },
+    // {
+    //     name: "Train Brain",
+    //     about: "FireBase Train scheduler App",
+    //     techUsed: "Firebase, moment.js",
+    //     link: "https://mcintyrehh.github.io/Brain-Train/",
+    //     img: "assets/images/escape-flight.png"
+    // },
+    // {
+    //     name: "Pic-Me-Up",
+    //     about: "Group project, in development",
+    //     techUsed: "(API keys have expired)",
+    //     link: "",
+    //     img: "assets/images/tempsnip.png"
+    // },
+    // {
+    //     name: "LIRI",
+    //     about: "Command line node.js app to display Tweets, movie, and song info",
+    //     techUsed: "node.js, npm, OMDb, Twitter, Spotify APIs",
+    //     link: "https://github.com/mcintyrehh/liri-node-app",
+    //     img: "assets/images/node.png"
+    // },
     {
         name: "Bamazon",
         about: "MySQL & Inquirer based Node.js command line warehouse/inventory app",
@@ -159,9 +159,16 @@ var projects = [
     {
         name: "Hank's Burgers",
         about: "Burger logger with a homemade ORM, following the MVC design pattern",
-        techUsed: "MySQL, Node, Express, Handlebars, Jaws DB, Heroku",
+        techUsed: "MySQL, Node.js, Express, Handlebars, Jaws DB, Heroku",
         link: "https://calm-atoll-38312.herokuapp.com/",
         img: "assets/images/hanksburgers.png"
+    },
+    {
+        name: "Mongo Unchained",
+        about: "Proof of concept practice with noSQL databases and website scraping",
+        techUsed: "MongoDB, Mongoose, Cheerio, Axios, Heroku",
+        link: "https://mongo-unchained.herokuapp.com/",
+        img: "assets/images/mongo-unchained.png"
     }
 
 ]
@@ -171,7 +178,7 @@ projects.forEach(function (element) {
 })
 function project(projObj) {
     $(".posters").append(
-        `<div class="col- card m-2 bg-dark text-center text-white">
+        `<div class="col- card m-2 bg-dark text-center text-white proj-card">
         <img class="card-img" src=${projObj.img} alt="${projObj.name} pic">
             <div class="card-img-overlay d-flex flex-column justify-content-end hover-text">
                 <h5 class="card-title card-name hide">${projObj.name}</h5>
