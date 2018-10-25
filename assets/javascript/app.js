@@ -169,8 +169,14 @@ var projects = [
         techUsed: "MongoDB, Mongoose, Cheerio, Axios, Heroku",
         link: "https://mongo-unchained.herokuapp.com/",
         img: "assets/images/mongo-unchained.png"
+    },
+    {
+        name: "Reaction Time",
+        about: "First practice with React.js",
+        techUsed: "React.js, Netlify Deployment",
+        link: "https://mongo-unchained.herokuapp.com/",
+        img: "assets/images/mongo-unchained.png"
     }
-
 ]
 //for each object in the array, make a card!
 projects.forEach(function (element) {
