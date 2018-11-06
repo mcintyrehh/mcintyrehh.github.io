@@ -174,8 +174,8 @@ var projects = [
         name: "Reaction Time",
         about: "First practice with React.js",
         techUsed: "React.js, Netlify Deployment",
-        link: "https://mongo-unchained.herokuapp.com/",
-        img: "assets/images/mongo-unchained.png"
+        link: "https://condescending-ptolemy-125687.netlify.com",
+        img: "assets/images/reaction-time.png"
     }
 ]
 //for each object in the array, make a card!
