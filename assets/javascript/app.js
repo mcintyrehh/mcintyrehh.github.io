@@ -14,7 +14,6 @@ $(document).ready(function () {
 
 //array with an element for each line printd
 var contactArray = ["let contact = {", "intro: \"I\'d love to hear from you\",", "strangers: \"say hi\",", "friends: \"hurl an insult\",", "recruiters: \"send job offers!\"", "}"]
-console.log(contactArray);
 var caption = $("#caption");
 //declaring iterators for index of individual elements, and the elements themselves 
 var i = 0;
@@ -36,26 +35,22 @@ function typeWriter() {
         if (index === 5) {
             caption.append("<br />} <span class=\"blink\">▓<span>");
             setInterval(blink, 400);
-            // console.log(currentWord);
             stopFunction();
             return;
         }
         else {
             caption.append("<br /> &nbsp &nbsp &nbsp &nbsp");
-            console.log(currentWord);
         }
         //exit and stop the interval once all elements have been displayed
         if (index === contactArray.length) {
-            console.log("breaking here");
             stopFunction();
             return;
         }
     }
 }
-console.log($(".contact-animation").offset().top);
+// console.log($(".contact-animation").offset().top);
 $(window).on("scroll", function() {
     if (!hasPlayed &&  $(".contact-animation").offset().top < 100);
-    console.log("*****NOICE*****");
 })
 //appends a letter ia typeWriter every 150ms
 var interval = setInterval(typeWriter, 150)
@@ -74,15 +69,6 @@ function blink() {
         pipe.css("opacity", 1);
     }
 }
-//grab the user inputs on clicking submit
-$(".submit").on("click", function () {
-    var name = $("#name").val();
-    var email = $("#email").val();
-    var message = $("#message").val();
-    console.log("Name: " + name);
-    console.log("email: " + email);
-    console.log("message: " + message);
-})
 
 //array of objects for easily adding new ones
 var projects = [
