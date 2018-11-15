@@ -162,6 +162,13 @@ var projects = [
         techUsed: "React.js, Netlify Deployment",
         link: "https://condescending-ptolemy-125687.netlify.com",
         img: "assets/images/reaction-time.png"
+    },
+    {
+        name: "",
+        about: "Full MERN stack application that scrapes satire sites, gathers keywords from articles, and populates real news stories based on them",
+        techUsed: "React.js, Ant.Design, MongoDB, Passport, Express, APIs, Node.js",
+        link: "https://rfni.herokuapp.com/",
+        img: "assets/images/RFNi.png"
     }
 ]
 //for each object in the array, make a card!
