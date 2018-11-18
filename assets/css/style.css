@@ -78,6 +78,10 @@ p {
 .proj-card {
     width: 200px;
 }
+.githubcard {
+    width: 200px;
+    background-color: rgba(0, 0, 0, .9);
+}
 .contact-me {
     background-color: black;
     color: lime;
