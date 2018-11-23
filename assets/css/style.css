@@ -48,6 +48,12 @@ p {
     font-size: 120pt;
     padding: 0, 15px;
 }
+.buttons {
+    font-family: 'Satisfy', cursive;
+}
+.social {
+    width: 50px;
+}
 .prof-pic {
     height: 280px;
     float: left;
