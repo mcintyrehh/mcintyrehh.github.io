@@ -38,24 +38,15 @@ p {
     margin: 0;
 }
 .caption {
-    position: absolute;
-    left: 0;
-    top: calc(50vh - 135px);
-    width: 100%;
     text-align: center;
+    background: rgba(0,0,0,.9);
+    border-radius: 15pt;
 }
 .my-name-2 {
     font-family: 'Satisfy', cursive;
     color: whitesmoke;
-    /* position: fixed; */
-    background-color: #111;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:cover;
-    padding: 25px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    font-size: 120px;
+    font-size: 120pt;
+    padding: 0, 15px;
 }
 .prof-pic {
     height: 280px;
@@ -113,5 +104,12 @@ p {
     [class*="col-"] {
         width: 100%;
         justify-content: center;
+    }
+    .my-name-2 {
+        font-size: 80px;
+        padding: 0 15px;
+    }
+    .caption {
+        overflow: auto;
     }
 }
