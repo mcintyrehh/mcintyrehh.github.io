@@ -13,7 +13,7 @@ $(document).ready(function () {
 });
 
 //array with an element for each line printd
-var contactArray = ["let contact = {", "intro: \"I\'d love to hear from you\",", "strangers: \"say hi\",", "friends: \"hurl an insult\",", "recruiters: \"send job offers!\"", "}"]
+var contactArray = ["const contact = {", "intro: \"I\'d love to hear from you\",", "strangers: \"say hi\",", "friends: \"hurl an insult\",", "recruiters: \"send job offers!\"", "}"]
 var caption = $("#caption");
 //declaring iterators for index of individual elements, and the elements themselves 
 var i = 0;
