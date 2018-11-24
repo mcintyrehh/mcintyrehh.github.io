@@ -91,6 +91,7 @@ $(document).ready(function () {
             name: "Science Trivia",
             about: "JavaScript based trivia game",
             techUsed: "JS objects, timeout functions, embedded gifs",
+            gitHub: "https://github.com/mcintyrehh/TriviaGame",
             link: "https://mcintyrehh.github.io/unit-4-game/",
             img: "assets/images/science.png"
         },
@@ -98,6 +99,7 @@ $(document).ready(function () {
             name: "¿Rick or Jerry?",
             about: "Silly clone of the trivia game",
             techUsed: "JS objects, timeout functions, embedded gifs",
+            gitHub: "https://github.com/mcintyrehh/RickJerryQuiz",
             link: "https://mcintyrehh.github.io/RickJerryQuiz/",
             img: "assets/images/RickJerry.jpg"
         },
@@ -105,6 +107,7 @@ $(document).ready(function () {
             name: "Rap Gif",
             about: "First project using APIs",
             techUsed: "Dynamically created API calls based on user input",
+            gitHub: "https://github.com/mcintyrehh/RapGif",
             link: "https://mcintyrehh.github.io/RapGif/",
             img: "assets/images/tacos.gif"
         },
@@ -133,20 +136,22 @@ $(document).ready(function () {
             name: "Bamazon",
             about: "MySQL & Inquirer based Node.js command line warehouse/inventory app",
             techUsed: "node.js, MySQL, Inquirer, easy-table, ",
+            gitHub: "https://github.com/mcintyrehh/bamazon",
             link: "https://github.com/mcintyrehh/bamazon",
             img: "assets/images/bamazon.jpg"
         },
-        {
-            name: "Adversario",
-            about: "Find your perfect Archenemy with this nemesis matching app powered by:",
-            techUsed: "Express, Node.js, and Heroku",
-            link: "https://calm-inlet-70591.herokuapp.com/",
-            img: "assets/images/Adversario.jpg"
-        },
+        // {
+        //     name: "Adversario",
+        //     about: "Find your perfect Archenemy with this nemesis matching app powered by:",
+        //     techUsed: "Express, Node.js, and Heroku",
+        //     link: "https://calm-inlet-70591.herokuapp.com/",
+        //     img: "assets/images/Adversario.jpg"
+        // },
         {
             name: "Hank's Burgers",
-            about: "Burger logger with a homemade ORM, following the MVC design pattern",
+            about: "Burger logger with a homemade ORM, following the MVC design",
             techUsed: "MySQL, Node.js, Express, Handlebars, Jaws DB, Heroku",
+            gitHub: "https://github.com/mcintyrehh/burger",
             link: "https://calm-atoll-38312.herokuapp.com/",
             img: "assets/images/hanksburgers.png"
         },
@@ -154,6 +159,7 @@ $(document).ready(function () {
             name: "Mongo Unchained",
             about: "Proof of concept practice with noSQL databases and website scraping",
             techUsed: "MongoDB, Mongoose, Cheerio, Axios, Heroku",
+            gitHub: "https://github.com/mcintyrehh/Mongo-Unchained",
             link: "https://mongo-unchained.herokuapp.com/",
             img: "assets/images/mongo-unchained.png"
         },
@@ -161,13 +167,15 @@ $(document).ready(function () {
             name: "Reaction Time",
             about: "First practice with React.js",
             techUsed: "React.js, Netlify Deployment",
+            gitHub: "https://github.com/mcintyrehh/reaction-time",
             link: "https://condescending-ptolemy-125687.netlify.com",
             img: "assets/images/reaction-time.png"
         },
         {
             name: "RFNi",
             about: "Full MERN stack app that scrapes satire sites, gathers keywords from articles, & populates real news stories based on them",
-            techUsed: "MERN, Ant.Design, Passport, APIs",
+            techUsed: "",
+            gitHub: "https://github.com/mcintyrehh/fakenewsnetwork",
             link: "https://rfni.herokuapp.com/",
             img: "assets/images/RFNi.png"
         }
@@ -184,7 +192,10 @@ $(document).ready(function () {
                 <h5 class="card-title card-name hide">${projObj.name}</h5>
                 <p class="card-text hide">${projObj.about}</p>
                 <p class="card-text col-small m-0 hide">${projObj.techUsed}</p>
-                <a class="btn btn-success hide button-link" href=${projObj.link} target="_blank">Check it out!</a>
+                <div>
+                    <a class="btn btn-success hide button-link" href=${projObj.link} target="_blank"><i class="fab fa-github"></i></a>
+                    <a class="btn btn-success hide button-link" href=${projObj.gitHub} target="_blank"><i class="fas fa-link"></i></a>
+                </div>
             </div>
      </div>`)
     }

@@ -52,6 +52,9 @@ p {
 .buttons {
     font-family: 'Satisfy', cursive;
 }
+.button-link {
+    width: 40%;
+}
 .social {
     width: 50px;
 }
