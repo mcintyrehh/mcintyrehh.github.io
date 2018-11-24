@@ -37,10 +37,11 @@ p {
     background-size: cover;
     margin: 0;
 }
-.caption {
+.main-splash {
     text-align: center;
     background: rgba(0,0,0,.9);
     border-radius: 15pt;
+    padding: 0 30px;
 }
 .my-name-2 {
     font-family: 'Satisfy', cursive;
@@ -75,9 +76,9 @@ p {
 .proj-card {
     width: 200px;
 }
-.githubcard {
-    width: 200px;
-    background-color: rgba(0, 0, 0, .9);
+
+#github-card {
+    padding-bottom: 10px;
 }
 .contact-me {
     background-color: black;
@@ -95,7 +96,7 @@ p {
 .contact-box {
     color: white;
     margin-bottom: 10px;
-    /* height: 70%; */
+    border-radius: 15px;
     background-color: rgba(0, 0, 0, .9);
 }
 .inputs {
@@ -117,5 +118,22 @@ p {
     }
     .caption {
         overflow: auto;
+    }
+    .contact-box {
+        width: 90vw;
+    }
+    .proj-card {
+        width: 40vw;
+        font-size: 8pt;
+    }
+    .button-link {
+        margin: 0;
+        padding: 0;
+    }
+    .card-img-overlay {
+        padding: 10px;
+    }
+    .card-title {
+        font-size: 10pt;
     }
 }

@@ -164,9 +164,9 @@ var projects = [
         img: "assets/images/reaction-time.png"
     },
     {
-        name: "",
-        about: "Full MERN stack application that scrapes satire sites, gathers keywords from articles, and populates real news stories based on them",
-        techUsed: "React.js, Ant.Design, MongoDB, Passport, Express, APIs, Node.js",
+        name: "RFNi",
+        about: "Full MERN stack app that scrapes satire sites, gathers keywords from articles, & populates real news stories based on them",
+        techUsed: "MERN, Ant.Design, Passport, APIs",
         link: "https://rfni.herokuapp.com/",
         img: "assets/images/RFNi.png"
     }
@@ -182,8 +182,8 @@ function project(projObj) {
             <div class="card-img-overlay d-flex flex-column justify-content-end hover-text">
                 <h5 class="card-title card-name hide">${projObj.name}</h5>
                 <p class="card-text hide">${projObj.about}</p>
-                <p class="card-text col-small hide">${projObj.techUsed}</p>
-                <a class="btn btn-success hide" href=${projObj.link} target="_blank">Check it out!</a>
+                <p class="card-text col-small m-0 hide">${projObj.techUsed}</p>
+                <a class="btn btn-success hide button-link" href=${projObj.link} target="_blank">Check it out!</a>
             </div>
      </div>`)
 }
