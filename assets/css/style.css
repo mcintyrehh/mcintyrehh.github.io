@@ -136,4 +136,7 @@ p {
     .card-title {
         font-size: 10pt;
     }
+    [class*="bg-img-"] {
+        background-size: auto;
+    }
 }
