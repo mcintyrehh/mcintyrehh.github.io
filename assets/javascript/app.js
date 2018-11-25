@@ -92,7 +92,7 @@ $(document).ready(function () {
             about: "JavaScript based trivia game",
             techUsed: "JS objects, timeout functions, embedded gifs",
             gitHub: "https://github.com/mcintyrehh/TriviaGame",
-            link: "https://mcintyrehh.github.io/unit-4-game/",
+            link: "https://mcintyrehh.github.io/TriviaGame/",
             img: "assets/images/science.png"
         },
         {
