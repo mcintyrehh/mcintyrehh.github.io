@@ -1,14 +1,4 @@
 $(document).ready(function () {
-    $(".hide").hide();
-    $(".card").hover(
-        function () {
-            $(this).find(".card-img").css("opacity", "0.2");
-            $(this).find(".hide").show();
-        }, function () {
-            $(this).find(".card-img").css("opacity", "1");
-            $(this).find(".hide").hide();
-        }
-    );
     var hasPlayed = 0;
     var interval;
     var options = {
@@ -208,4 +198,14 @@ $(document).ready(function () {
             </div>
      </div>`)
     }
+    $(".hide").hide();
+    $(".card").hover(
+        function () {
+            $(this).find(".card-img").css("opacity", "0.2");
+            $(this).find(".hide").show();
+        }, function () {
+            $(this).find(".card-img").css("opacity", "1");
+            $(this).find(".hide").hide();
+        }
+    );
 })
